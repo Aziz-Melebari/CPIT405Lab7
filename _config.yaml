@@ -1,8 +1,0 @@
-    steps:
-      - name: Build or Run Project
-        env:
-          # This maps your GitHub secret to the environment variable your JS file is looking for
-          UNSPLASH_ACCESS_KEY: ${{ secrets.ACCESS_KEY }} 
-        run: |
-          npm install
-          node your-script.js # config.js will now successfully read the variable
